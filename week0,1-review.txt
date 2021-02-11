@@ -1,0 +1,51 @@
+ Hey Kai, I reviewed you code. 
+
+
+Week 1:
+
+Problem 1: Your solution is very clean and written very methodically. Although it works for most test cases. It will fail if the list only contains 1 number as the list index will be out of range. 
+
+
+
+Could shorten your solution down to a simple for loop:
+  
+  
+  
+    
+      
+      
+        Python
+      
+    
+    
+    
+      For digit in nums:
+  if nums.count(digit) == 1:
+  return digit
+    
+    
+  
+  
+
+ 
+
+Problem 2: Really well written solution which is efficient and fast! Although you can reduce this code by quite a bit by using sets in Python. As sets can only contain unique entities. 
+
+
+
+Tests: Very well written, good naming conventions and really like that you store the results. Helps with readability! 
+
+
+
+Week 2:
+
+Second largest: Nice and clean solution using built in functions. Like how you dealt with the removal of chars. 
+
+
+
+Valid anagram: Clean solution, and you can do away with .join just returning like this would be adequate:  return sorted(s) == sorted(t)
+
+
+
+Tests:  Good test coverage that covers some test cases will fail and pass. Really like the comments!
+
