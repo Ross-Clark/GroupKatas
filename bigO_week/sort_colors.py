@@ -1,2 +1,2 @@
 def sortColors(self, nums):
-  return [nums.sort()]
+  nums.sort()
