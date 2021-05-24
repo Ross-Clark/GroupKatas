@@ -1,14 +1,13 @@
 import re
 
 
-content = []
-
 def read_file():
     with open ('server_logs.log', 'rt') as myfile:
         contents = myfile.readlines()
     return contents
 
-def write_ip_to_file(content):
+def write_ip_to_file():
+    content = read_file()
     ip_pattern = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
     #init list
     store_ip = []
@@ -65,6 +64,6 @@ def get_404():
 
 
 if __name__ == "__main__":
-    write_ip_to_file(content)
+    write_ip_to_file()
     total_status_codes()
     get_404()
